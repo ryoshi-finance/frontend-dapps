@@ -16,7 +16,7 @@ We aim to be recognized as the hub of the cryptocurrency investor community, whe
 An open source interface for Ryoshi Finance -- a protocol for decentralized exchange of Blockchain.
 
 - Website: [uniswap.org](https://ryoshi.finance/)
-- Interface: [app.uniswap.org](https://app.ryoshi.finance) Soon
+- Interface: [app.ryoshi.finance](https://app.ryoshi.finance) Soon
 - Docs: [docs.ryoshi.finance](https://docs.ryoshi.finance/)
 - Twitter: [@ryoshifinance](https://twitter.com/ryoshifinance)
 - Reddit: [/r/ryoshidapps](https://www.reddit.com/r/ryoshidapps/)
