@@ -3,15 +3,34 @@ var rp = require('request-promise').defaults({ json: true })
 const history = {}
 
 const stables = [
+	//Address 1
 	'0x6b175474e89094c44da98b954eedeac495271d0f',
+	
+	//Address 2
 	'0xdac17f958d2ee523a2206206994597c13d831ec7',
+	
+	//Address 3
 	'0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
+	
+	//Address 4
 	'0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
+	
+	//Address 5
 	'0x8e870d67f660d95d5be530380d0ec0bd388289e1',
+	
+	//Address 6
 	'0x8f3cf7ad23cd3cadbd9735aff958023239c6a063',
+	
+	//Address 7
 	'0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270',
+	
+	//Address 8
 	'0x7ceb23fd6bc0add59e62ac25578270cff1b9f619',
+	
+	//Address 9
 	'0xc2132d05d31c914a87c6611c10748aeb04b58e8f',
+	
+	//Address 10
 	'0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'
 ];
 
@@ -36,7 +55,7 @@ export default {
 		let query = pathName.split('/');
 		let query_res = `https://api.ryoshi.pro/candles/${query[2]}/${token[0]}/${token[1]}?frame=${resolution}`
 		//alert(resolution);
-		//console.log(query_res);
+		console.log(query_res);
 
 		// find stables coin multiply
 		const found = stables.find(element => element == token[1]);
@@ -107,7 +126,7 @@ export default {
 
 					if (first) {
 						var lastBar = bars[bars.length - 1];
-						//console.log('dsa',lastBar);
+						console.log('dsa',lastBar);
 						history[symbolInfo.name] = { lastBar: lastBar }
 					}
 					return bars
