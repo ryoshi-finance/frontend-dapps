@@ -1,0 +1,463 @@
+h1,h2,h3,h4,h5,h6,p,figure,ul{
+    margin:0!important;
+    padding:0!important;
+}
+
+body{
+    background: #DED9E5!important;
+}
+
+body > iframe {
+    pointer-events: none;
+  }
+
+/* Set Header */
+.header__main{
+    background: #190050;
+    height: 70px;
+}
+
+.header__main .header__main--contain .main__logo{
+    width: 20%;
+    position:relative;
+}
+
+.header__main .header__main--contain .main__logo span{
+    position: absolute;
+    top: -1.5em;
+    color: white;
+    left: 50%;
+    margin-left: -3em;
+}
+
+.header__main .header__main--contain .main__search{
+    width: 40%;
+}
+
+.header__main .header__main--contain .main__options{
+    width: 20%;
+}
+
+.header__main .header__main--contain .main__logo h1{
+    color: white;
+}
+
+.header__main .header__main--contain .container__show{
+    line-height: 70px;
+}
+
+.header__main .header__main--contain .main__search .main__search--form input{
+    height: 40px;
+    padding: 0.85em 1.5em;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.header__main .header__main--contain .main__options svg{
+    color: white;
+    font-size: 35px;
+}
+
+
+
+/* Set Header */
+
+
+.subheader__main{
+    background: #CEC7DD;
+}
+
+.subheader__main .subheader__details .details__article{
+    background: #F2E1FF;
+    width: 123px;
+    height: 63px;
+    border-radius: 10px;
+    padding: 8px 10px;
+}
+
+
+.subheader__main .subheader__details .details__article:nth-child(2){
+    background-color: #E1FFED;
+}
+
+.subheader__main .subheader__details .details__article:nth-child(3){
+    background-color: #FFFCE1;
+}
+
+.subheader__main .subheader__details .details__article:nth-child(4){
+    background-color: #FFE8E1;
+}
+
+.subheader__main .subheader__details .details__article:nth-child(5){
+    background-color: #F2E1FF;
+}
+
+.subheader__main .subheader__details .details__article:nth-child(7){
+    background-color: #E1FFED;
+}
+
+.subheader__main .subheader__details .details__article:nth-child(8){
+    background-color: #F2E1FF;
+}
+
+.subheader__main .subheader__details .details__article:nth-child(9){
+    background-color: #FFFCE1;
+}
+
+.subheader__main .subheader__details .details__article h2{
+    font-size: 12px;
+    margin-bottom: 3px!important;
+}
+
+.subheader__main .subheader__details .details__article h3{
+    font-size: 17px;
+    color: #630295;
+}
+
+
+
+/* MAIN HOME */
+
+main{
+    padding: 3em 0;
+}
+
+main .aside__main{
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+}
+
+main .aside__main .aside__main--header{
+    background-color: #ECE9F0;
+    padding: 15px;
+}
+
+main .aside__main .aside__main--header h2{
+    font-size: 15px;
+    color: #150068;
+    background: #D3CDDD;
+    padding: 10px 12px!important;
+    border-radius: 30px;
+}
+
+main .aside__main .aside__main--header .expand{
+    font-size: 14px;
+}
+
+main .aside__main .aside__main--header .expand a{
+    text-decoration: none;
+    color: #150068;
+}
+
+main .aside__main .nav{
+    position: relative;
+    padding: 0.5em 1em!important;
+    font-size: 14px;
+    width: 60%;
+}
+
+main .aside__main .nav .nav-item:last-child{
+    position: absolute;
+    left: 0;
+    margin-left: 4.5em;
+}
+
+main .aside__main .nav .nav-link:first-child{
+    padding: 0.3em 1.5em;
+    text-align: left;
+}
+
+main .aside__main .nav .nav-link{
+    background-color: #D3CDDD;
+    color: white;
+    border-radius: 50px;
+}
+
+main .aside__main .nav .nav-link.active {
+    background-color: #630396;
+    color: white;
+    border-radius: 10px;
+    padding: 0.3em 1.5em;
+    border-radius: 50px;
+}
+
+main .aside__main .aside__main--list{
+    position: relative;
+}
+
+main .aside__main .aside__main--list .filter{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 0.5em;
+    margin-right: 1em;
+} 
+
+main .aside__main .aside__main--list .filter select{
+    border: 1px solid #630295;
+    border-radius: 50px;
+    color: #630295;
+    padding: 0.25em 0.6em;
+    font-size: 14px;
+}
+
+main .aside__main .aside__main--list .list__trade{
+    padding: 0.5em 1em;
+    border-bottom: 1px solid #dddddd;
+}
+
+main .aside__main .aside__main--list .list__trade{
+    margin: 0 0 1em 0;
+}
+
+main .aside__main .aside__main--list .list__trade .list__trade--left
+.name{
+    color: #630295;
+}
+
+main .aside__main .aside__main--list .list__trade .list__trade--left
+.price{
+    font-weight: 700;
+    color: #4E4E4E;
+}
+
+main .aside__main .aside__main--list .list__trade .list__trade--right a{
+    width: 78px;
+    height: 22px;
+    border-radius: 10px;
+    background: #630295;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+main .main__feed{
+    width: 70%;
+    background-color: #210858;
+    border-radius: 15px;
+}
+
+main .main__feed .nav-link.active{
+    background: #210858!important;
+    color: white!important;
+    border: none!important;
+    border-top-left-radius: 15px;
+}
+
+main .main__feed .nav{
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+main .main__feed .nav-link{
+    background-color: white;
+    padding: 10px 25px;
+    border: none;
+    color:#150068;
+    border-top-right-radius: 15px;
+}
+
+main .feed__dashboard{
+    padding: 22px 15px;
+}
+
+main .feed__dashboard .feed__dashboard--trending{
+    background: #D3CDDD;
+    width: 150px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+main .feed__dashboard .feed__dashboard--timeline{
+    background: #fff;
+    width: 80%;
+    border-radius: 10px 0px 10px 10px;
+}
+
+main .feed__dashboard .feed__dashboard--trending h3{
+    font-size: 20px;
+    color: #630295;
+}
+
+main .feed__dashboard .feed__dashboard--trending  .trending__header{
+    padding: 0 0 0.5em 0;
+}
+
+main .feed__dashboard .feed__dashboard--trending .menu__List{
+    margin: 0.8em 0 0 0;
+}
+
+main .feed__dashboard .feed__dashboard--trending .menu__List a{
+    color: #1B0055;
+    background: rgba(21, 0, 104, 0.14);
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__post{
+    border-bottom: 1px solid rgba(33, 8, 88, 0.4);
+    padding-bottom: 0.85em;
+    margin-bottom: 1em;
+}
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__header{
+    padding: 1em;
+}
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__header h3{
+    color: black;
+    font-size:22px;
+}
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__header select{
+        border: 2px solid #630295;
+        background: white;
+        border-radius: 15px;
+        padding: 3px 20px;
+        color: #630295;
+}
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__post{
+    padding: 0 1em 1em 1em;
+}
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__post .timeline__post--user .user__avatar{
+    margin-right: 8px;
+}
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__post .timeline__post--user .user__name a{
+    color: #630295;
+    text-decoration: none;
+}
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__post .timeline__post--user .user__name a:first-child{
+    font-weight: 800;
+}
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__post .timeline__post--details{
+    padding: 0.5em 0;
+}
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__post .timeline__post--details p{
+    color: #444444;
+    font-size: 14px;
+}
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__post .timeline__post--details p a{
+    color: black;
+    background-color: rgba(21, 0, 104, 0.14);
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__pub .time__pub--form{ 
+    width: 80%;
+    padding: 1em;
+}
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__pub .time__pub--form textarea {
+    resize: none!important;
+    margin-right: 0.5em;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__pub .time__pub--form input[type='submit']{
+    background: #630295;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    padding: 0.45em 1.5em;
+}
+
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__pub .time__pub--expand{
+    background-color: #210858;
+    width: 20%;
+}
+
+
+.main .feed__dashboard .feed__dashboard--timeline .timeline__pub .time__pub--expand a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.main .main__music {
+    display: flex;
+     justify-content: space-between;
+}
+
+.main .main__music .main__music--aside{
+    background-color: red;
+    height: 200px;
+    width: 25%;
+}
+
+.main .main__music .main__music--news{
+    width: 70%;
+    background: white;
+}
+
+.main .main__music .main__music--news .music__news--header{
+    padding: 10px 15px;
+}
+
+.main .main__music .main__music--news .music__news--header h2{
+    font-size: 22px;    
+}
+
+.main .main__music .main__music--news .music__news--artist {
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.main .main__music .main__music--news .music__news--artist .main__artist{
+    width: 160px;
+    position: relative;
+}
+
+.main .main__music .main__music--news .music__news--artist .main__artist .main__artist--cover{
+    position: relative;
+}
+
+.main .main__music .main__music--news .music__news--artist .main__artist .main__artist--play{
+    position: absolute;
+    right:0.5em;
+    bottom: -1em;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0px 1px 20px rgba(0,0,0, .14);
+    border: 1px solid #fff;
+}
+
+.main .main__music .main__music--news .music__news--artist .main__artist .main__artist--play svg{
+    font-size: 2em;
+}
+
+.main .main__music .main__music--news .music__news--artist .main__artist img{
+    border-radius: 10px;
+}
+
+.main .main__music .main__music--news .music__news--artist .main__artist--title h3{
+    color: #4b4b4b;
+    font-size: 15px;
+}
+
+.main .main__music .main__music--news .music__news--artist .main__artist--author p{
+    font-size: 12px;
+    color:#630295;
+}
