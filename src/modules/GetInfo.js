@@ -10,7 +10,7 @@ const isAddress = (value: any) => {
 
 function GetInfo(obj) {
 
-   const logo_token = `https://raw.githubusercontent.com/EcosystemSuni/assets/master/blockchains/ethereum/assets/${isAddress(obj.address)}/logo.png`;
+   const logo_token = `https://raw.githubusercontent.com/ryoshi-assets-dev/assets/master/blockchains/ethereum/assets/${isAddress(obj.address)}/logo.png`;
     return (
       <>
         <a href='https://github.com/EcosystemSuni/assets' target='_blank' className="pair-logo">
