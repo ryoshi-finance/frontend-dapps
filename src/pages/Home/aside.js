@@ -38,7 +38,7 @@ function Aside() {
               <article className="list__trade d-flex justify-content-between align-items-center">
                 <div className="list__trade--left">
                   <div className="name">@ryoshi</div>
-                  <div className="price">3.78 PEN</div>
+                  <div className="price">3.78 JPY</div>
                 </div>
 
                 <div className="list__trade--right">
@@ -49,7 +49,7 @@ function Aside() {
               <article className="list__trade d-flex justify-content-between align-items-center">
                 <div className="list__trade--left">
                   <div className="name">@luxdefi</div>
-                  <div className="price">3.78 PEN</div>
+                  <div className="price">3.78 JPY</div>
                 </div>
 
                 <div className="list__trade--right">
@@ -60,7 +60,7 @@ function Aside() {
               <article className="list__trade d-flex justify-content-between align-items-center">
                 <div className="list__trade--left">
                   <div className="name">@vip_tradejp</div>
-                  <div className="price">3.78 PEN</div>
+                  <div className="price">3.78 JPY</div>
                 </div>
 
                 <div className="list__trade--right">
@@ -71,7 +71,7 @@ function Aside() {
               <article className="list__trade d-flex justify-content-between align-items-center">
                 <div className="list__trade--left">
                   <div className="name">@minvt</div>
-                  <div className="price">3.78 PEN</div>
+                  <div className="price">3.78 JPY</div>
                 </div>
 
                 <div className="list__trade--right">
@@ -82,7 +82,7 @@ function Aside() {
               <article className="list__trade d-flex justify-content-between align-items-center">
                 <div className="list__trade--left">
                   <div className="name">@sort360</div>
-                  <div className="price">3.78 PEN</div>
+                  <div className="price">3.78 JPY</div>
                 </div>
 
                 <div className="list__trade--right">
@@ -93,7 +93,7 @@ function Aside() {
               <article className="list__trade d-flex justify-content-between align-items-center">
                 <div className="list__trade--left">
                   <div className="name">@zal1</div>
-                  <div className="price">3.78 PEN</div>
+                  <div className="price">3.78 JPY</div>
                 </div>
 
                 <div className="list__trade--right">
@@ -104,7 +104,7 @@ function Aside() {
               <article className="list__trade d-flex justify-content-between align-items-center">
                 <div className="list__trade--left">
                   <div className="name">@saroshi</div>
-                  <div className="price">3.78 PEN</div>
+                  <div className="price">3.78 JPY</div>
                 </div>
 
                 <div className="list__trade--right">
