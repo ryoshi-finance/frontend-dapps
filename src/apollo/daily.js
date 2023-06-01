@@ -8,7 +8,6 @@ const APIURLV3 = 'https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3'
 const APIURL_SUSHISWAP = 'https://api.thegraph.com/subgraphs/name/sushiswap/exchange'
 const APIURL_SHIBASWAP = 'https://api.thegraph.com/subgraphs/name/shibaswaparmy/exchange'
 const APIURL_PANCAKESWAP = 'https://bsc.streamingfast.io/subgraphs/name/pancakeswap/exchange-v2'
-const APIURL_SUNI = 'https://api.thegraph.com/subgraphs/name/edinsoncs/suniexchange'
 
 
 // NETWORK BSC

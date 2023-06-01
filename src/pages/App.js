@@ -7,6 +7,7 @@ import {
   useParams
 } from "react-router-dom";
 import Home from './Home';
+import Access from './Access';
 
 function App(): JSX.Element {
 
@@ -14,6 +15,7 @@ function App(): JSX.Element {
 
       <Routes>
         <Route path='/' element={<Home/>} />
+        <Route path='/access' element={<Access/>} />
       </Routes>
 
     )

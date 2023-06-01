@@ -22,10 +22,10 @@ export default {
 	},
 	resolveSymbol: (symbolName, onSymbolResolvedCallback, onResolveErrorCallback) => {
 		// expects a symbolInfo object in response
-		console.log('======resolveSymbol running')
+		//console.log('======resolveSymbol running')
 		// console.log('resolveSymbol:',{symbolName})
 		var split_data = symbolName.split(/[:/]/)
-		console.log({split_data})
+		// console.log({split_data})
 		var symbol_stub = {
 			name: symbolName,
 			description: '',

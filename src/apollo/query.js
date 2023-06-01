@@ -7,7 +7,6 @@ const APIURL_UNISWAP = 'https://api.thegraph.com/subgraphs/name/ianlapham/uniswa
 const APIURL_UNISWAPV3 = 'https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3'
 const APIURL_SUSHISWAP = 'https://api.thegraph.com/subgraphs/name/sushiswap/exchange'
 const APIURL_SHIBASWAP = 'https://api.thegraph.com/subgraphs/name/shibaswaparmy/exchange'
-const APIURL_SUNI = 'https://api.thegraph.com/subgraphs/name/edinsoncs/suniexchange'
 //const APIURL_AMPLE = 'https://api.thegraph.com/subgraphs/name/shrinivasmani/pknew2'
 
 //BSC

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client'
 import NumberFormat from 'react-number-format';
 import { getAddress } from '@ethersproject/address'
-const APIURL = 'https://api.thegraph.com/subgraphs/name/edinsoncs/suniexchange'
 
 var minutesConfig = new Date( Date.now() - 1000000000 * 60 );
 const backTime = parseInt(minutesConfig.getTime() / 1000).toFixed(0);
