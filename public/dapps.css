@@ -617,13 +617,28 @@ main .feed__dashboard .feed__dashboard--trending .menu__List a{
 }
 
 .page__acess .access__De .acess__Form--Actions  button,
-.page__acess .access__De .acess__Form--Actions  a{
+.page__acess .access__De .acess__Form--Actions  a.btn{
     display: block;
     width: 100%;
     margin: 0 0 1em 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(0, 0, 0, 0.3);
     height: 39px;
+}
+
+.access__Form--Dex .dex__Metamask{
+    background: #f39c12;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.access__Form--Dex .dex__Metamask:hover{
+    background: #f1c40f;
+}
+
+.access__Form--Dex .dex__Metamask img{
+    margin: 0 0.25em 0 0;
 }
 
 .footer{

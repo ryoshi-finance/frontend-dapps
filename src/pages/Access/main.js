@@ -20,7 +20,7 @@ function Main() {
                         <input type='text' name='password' placeholder='password' />
                     </fieldset>
 
-                    <article className='acess__Form--Actions pt-4'>
+                    <article className='acess__Form--Actions pt-4 pb-4'>
 
                         <div className='actions__Login'>
                             <button className='btn btn-default'>Login</button>
@@ -29,6 +29,21 @@ function Main() {
                         <div className='actions__Login'>
                             <a className='btn btn-default'>Register</a>
                         </div>
+
+                        <a href='#' className='text-center d-block mt-4'>
+                          Forgot password?
+                        </a>
+
+                    </article>
+
+                    <hr />
+
+                    <article className='access__Form--Dex pt-5'>
+
+                      <button className='dex__Metamask btn'>
+                        <img src='/images/metamask.svg' width='30' />
+                        Metamask
+                      </button>
 
                     </article>
 
