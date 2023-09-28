@@ -15,13 +15,15 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
+
 const appSW = registerServiceWorker()
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Web3ReactProvider getLibrary={getLibrary}>
-          <App appServiceWorker={appSW} />
+          <App appServiceWorker={appSW} data-edy='true'/>
       </Web3ReactProvider>
     </Router>
   </React.StrictMode>,

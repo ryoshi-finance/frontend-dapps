@@ -4,21 +4,36 @@ import {
   Routes,
   Route,
   Link,
-  useParams
+  useParams,
 } from "react-router-dom";
-import Home from './Home';
-import Access from './Access';
+import React, { useState, useEffect } from 'react';
+import Home from "./Home";
+import Access from "./Access";
+import News from "./News";
+import useLocalStorage from 'use-local-storage'
 
 function App(): JSX.Element {
+  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const [theme, setTheme] = useLocalStorage("theme", defaultDark ? "dark" : "light");
+  
 
-    return (
+  const switchTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
 
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/access' element={<Access/>} />
-      </Routes>
 
-    )
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/access" element={<Access />} />
+      <Route path="/news" element={<News />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;

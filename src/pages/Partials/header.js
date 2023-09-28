@@ -1,19 +1,39 @@
 import React, { useEffect, useState } from "react";
 import { FiMenu, FiMoon } from "react-icons/fi";
 import { slide as Menu } from "react-burger-menu";
-import { FiCheckCircle } from "react-icons/fi";
+import { FiCheckCircle, FiSun } from "react-icons/fi";
 //import { MenuRyoshi } from "./menu";
 import Hamburger from "hamburger-react";
 import Dropdown from "react-bootstrap/Dropdown";
 import Toggle from "react-toggle";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import useLocalStorage from "use-local-storage";
+
+var change__theme = 0;
 
 function Header() {
+  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [isOpen, setOpen] = useState(false);
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const [theme, setTheme] = useLocalStorage(
+    "theme",
+    defaultDark ? "dark" : "light"
+  );
+
+  const themeChange = () => {
+    if (change__theme == 0) {
+      document.documentElement.setAttribute("data-theme", "light");
+      setTheme("light");
+      change__theme = 1;
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+      setTheme("dark");
+      change__theme = 0;
+    }
+  };
 
   return (
     <>
@@ -73,7 +93,9 @@ function Header() {
         <section className="header__main--contain container">
           <div className="container__show d-flex justify-content-between align-items-center">
             <article className="main__logo">
-              <h1><a href='/'>RYO.</a></h1>
+              <h1>
+                <a href="/">RYO.</a>
+              </h1>
               <span>HOME</span>
               <div className="main__site__lang" onClick={handleShow}>
                 <img
@@ -98,10 +120,26 @@ function Header() {
                 <Hamburger toggled={isOpen} toggle={setOpen} color="#FFF" />
               </article>
 
-              <article className="main__options--theme">
-                <a href="#">
-                  <FiMoon />
-                </a>
+              <article className="main__options--theme" onClick={themeChange}>
+                {(() => {
+                  if (change__theme == 0) {
+                    return (
+                      <>
+                        <a href="#">
+                          <FiSun />
+                        </a>
+                      </>
+                    );
+                  } else {
+                    return (
+                      <>
+                        <a href="#">
+                          <FiMoon />
+                        </a>
+                      </>
+                    );
+                  }
+                })()}
               </article>
 
               <article className="main__options--user">

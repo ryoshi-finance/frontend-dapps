@@ -1,15 +1,123 @@
+
+html[data-theme='dark'] {
+
+    --bg-button-base: black;
+
+
+    --background-color: #282828;
+    --bg-header-color: black;
+    --bg-subheader-color: #161719;
+    --bg-footer-color: black;
+    --bg-home-top-info: black;
+    
+    --text-color: #F7F8F8;
+    --text-color-base: #818ea3;
+    --text-primary-link: #777777;
+
+
+    --bg-text-color-base: #1d1d1d;
+    --bg-border-color-base: #1d1d1f;
+    --bg-border-color-secondary: #323232;
+
+    --bg-home-p2p-header-color: #000;
+    --bg-home-p2p-bg-color: #1e1f21;
+    --bg-home-p2p-bg-button-header: #282828;
+    --bg-home-p2p-bg-button-text: #808ea3;
+    --bg--home-p2p-link-username: #808ea3;
+    --bg--home-p2p-link-currency: #808ea3;
+
+    
+
+    --bg-home-expand-button: black;
+
+    --bg-home-feed-base: black;
+
+
+    --bg-home-dashboard-timeline: #353535;
+    --bg--home-trending-feed: #353535;
+    --bg-button-classic: #4f4f4f;
+    --bg-button-classic-text: #fff;;
+
+    --color--text--header--clasic: white;
+
+
+    --timeline--user--name: #acacac;
+    --timeline--user--description:#acacac;
+    --timeline--user--hash:#9E9E9E;
+    --timeline--user--border-bottom: rgb(91 91 91 / 40%);
+    --timeline--user--header: #fff;
+
+
+    --bg-subheader--number-position-currency: black;
+
+
+    
+    
+    --link-color: #828fff;
+}
+
+html[data-theme='light'] {
+
+    --bg-button-base: #630295;
+
+    --bg-header-color: #190050;
+    --bg-subheader-color: #CEC7DD;
+    --bg-footer-color: #1B0252;
+    --bg-home-top-info: white;
+    --background-color: #DED9E5;
+    
+    --text-color: #F7F8F8;
+    --text-color-base: #4E4E4E;
+    --text-primary-link: #150068;
+
+    --bg-text-color-base: #210858;
+    --bg-border-color-base: #dedede;
+    --bg-border-color-secondary: #dedede;
+
+
+    --bg-home-feed-base: #210858;
+    
+    --bg-home-p2p-header-color: #ECE9F0;
+    --bg-home-p2p-bg-color: white;
+    --bg-home-p2p-bg-button-header: #D3CDDD;
+    --bg-home-p2p-bg-button-text: #150068;
+    --bg--home-p2p-link-username: #630295;
+    --bg--home-p2p-link-currency: #4E4E4E;
+
+    --bg--home-trending-feed: #D3CDDD;
+    --bg-home-expand-button: #210858;
+    --bg-home-dashboard-timeline: #fff;
+    --bg-button-classic: rgba(21, 0, 104, 0.14);
+    --bg-button-classic-text: #1B0055;
+
+    --color--text--header--clasic: #630295;
+    --timeline--user--description:#444444;
+    
+
+
+    --timeline--user--name: #630295;
+    --timeline--user--hash:rgba(21, 0, 104, 0.14);
+    --timeline--user--border-bottom: rgba(33, 8, 88, 0.4);
+    --timeline--user--header: black;
+
+    --bg-subheader--number-position-currency: #19004f;
+
+    
+    --link-color: #828fff;
+}
+
 h1,h2,h3,h4,h5,h6,p,figure,ul{
     margin:0!important;
     padding:0!important;
 }
 
 body{
-    background: #DED9E5!important;
+    background: var(--background-color)!important;
 }
 
 body > iframe {
     pointer-events: none;
-  }
+}
 
 
 /* Set Buttons */
@@ -84,7 +192,7 @@ body > iframe {
 
 /* Set Header */
 .header__main{
-    background: #190050;
+    background: var(--bg-header-color);
     height: 70px;
 }
 
@@ -167,7 +275,7 @@ body > iframe {
 
 
 .subheader__main{
-    background: #CEC7DD;
+    background: var(--bg-subheader-color);
 }
 
 .subheader__main .subheader__details .details__article{
@@ -176,36 +284,118 @@ body > iframe {
     height: 63px;
     border-radius: 10px;
     padding: 8px 10px;
+    position:relative;
 }
 
+.subheader__main .subheader__details .details__article .position{
+    position: absolute;
+    background: var(--bg-subheader--number-position-currency);
+    width: 20px;
+    height: 20px;
+    color: white;
+    top: 0.1em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 19px;
+    right: -0.5em;
+    font-size: 12px;
+}
 
-.subheader__main .subheader__details .details__article:nth-child(2){
+.subheader__main .subheader__details .child{
+    margin: 0 1em 0 0;
+}
+
+.subheader__main .subheader__details .child:nth-child(2) .details__article{
     background-color: #E1FFED;
 }
 
-.subheader__main .subheader__details .details__article:nth-child(3){
+.subheader__main .subheader__details .child:nth-child(3) .details__article{
     background-color: #FFFCE1;
 }
 
-.subheader__main .subheader__details .details__article:nth-child(4){
+.subheader__main .subheader__details .child:nth-child(4) .details__article{
     background-color: #FFE8E1;
 }
 
-.subheader__main .subheader__details .details__article:nth-child(5){
+.subheader__main .subheader__details .child:nth-child(5) .details__article{
     background-color: #F2E1FF;
 }
 
-.subheader__main .subheader__details .details__article:nth-child(7){
+.subheader__main .subheader__details .child:nth-child(6) .details__article{
     background-color: #E1FFED;
 }
 
-.subheader__main .subheader__details .details__article:nth-child(8){
+.subheader__main .subheader__details .child:nth-child(7) .details__article{
     background-color: #F2E1FF;
 }
 
-.subheader__main .subheader__details .details__article:nth-child(9){
+.subheader__main .subheader__details .child:nth-child(8) .details__article{
     background-color: #FFFCE1;
 }
+
+.subheader__main .subheader__details .child:nth-child(9) .details__article{
+    background-color: #E1FFED;
+}
+
+.subheader__main .subheader__details .child:nth-child(10) .details__article{
+    background-color: #F2E1FF;
+}
+
+.subheader__main .subheader__details .child:nth-child(11) .details__article{
+    background-color: #FFE8E1;
+}
+
+.subheader__main .subheader__details .child:nth-child(12) .details__article{
+    background-color: #E1FFED;
+}
+
+.subheader__main .subheader__details .child:nth-child(13) .details__article{
+    background-color: #FFE8E1;
+}
+
+.subheader__main .subheader__details .child:nth-child(13) .details__article{
+    background-color: #E1FFED;
+}
+
+
+.subheader__main .subheader__details .child:nth-child(14) .details__article{
+    background-color: #FFFCE1;
+}
+
+.subheader__main .subheader__details .child:nth-child(15) .details__article{
+    background-color: #FFE8E1;
+}
+
+.subheader__main .subheader__details .child:nth-child(16) .details__article{
+    background-color: #F2E1FF;
+}
+
+.subheader__main .subheader__details .child:nth-child(17) .details__article{
+    background-color: #E1FFED;
+}
+
+.subheader__main .subheader__details .child:nth-child(18) .details__article{
+    background-color: #F2E1FF;
+}
+
+.subheader__main .subheader__details .child:nth-child(19) .details__article{
+    background-color: #FFFCE1;
+}
+
+.subheader__main .subheader__details .child:nth-child(20) .details__article{
+    background-color: #E1FFED;
+}
+
+.subheader__main .subheader__details .child:nth-child(21) .details__article{
+    background-color: #F2E1FF;
+}
+
+.subheader__main .subheader__details .child:nth-child(22) .details__article{
+    background-color: #FFE8E1;
+}
+
+
 
 .subheader__main .subheader__details .details__article h2{
     font-size: 12px;
@@ -217,6 +407,76 @@ body > iframe {
     color: #630295;
 }
 
+.top__pairs--contain{
+    background: var(--bg-home-top-info);
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border-radius: 10px;
+    width: 24%;
+}
+
+.top__pairs--contain .pairs__single--header{
+    border-bottom: 1px solid var(--bg-border-color-base);
+    margin: 0 0 1em 0;
+}
+
+.top__pairs--contain .pairs__single--header h2{
+    font-size: 0.95em;
+    padding: 0.5em 0 0.85em 0!important;
+    color: var(--text-color-base);
+}
+.top__pairs--contain .pairs__single--header h2 svg{
+    color: #2196F3;
+}
+
+.top__pairs--contain .pairs__single{
+    width: 280px;
+    font-size: 0.9em;
+}
+
+.top__pairs--contain .pairs__single .name__pair{
+    color: var(--text-color-base);
+}
+
+.top__pairs--contain .pairs__single .single__percentage{
+    color: var(--text-color-base);
+}
+
+.top__pairs--contain .pairs__single:hover{
+    opacity: 0.7;
+}
+.top__pairs--contain .pairs__single .single__position{
+    margin: 0 0.5em 0 0;
+}
+.top__pairs--contain .pairs__single .single__position span{
+    background: var(--bg-text-color-base);
+    padding: 0.25em 0.5em;
+    color: white;
+    border-radius: 5px;
+}
+
+.top__pairs--contain .pairs__single img{
+    border-radius: 50%;
+}
+
+.top__pairs--contain .pairs__single .name__pair span:first-child{
+    font-weight: 800;
+}
+
+.top__pairs--contain .pairs__single .name__pair span{
+    margin: 0 0.1em;
+}
+
+.top__pairs--contain .pairs__single .name__pair span:last-child{
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.top__pairs--contain .pairs__single .single__price {
+    color: green;
+    font-weight: 700;
+    margin: 0 0.5em 0 0;
+}
 
 
 /* MAIN HOME */
@@ -226,20 +486,20 @@ main{
 }
 
 main .aside__main{
-    background-color: white;
+    background-color: var(--bg-home-p2p-bg-color);
     width: 300px;
     border-radius: 10px;
 }
 
 main .aside__main .aside__main--header{
-    background-color: #ECE9F0;
+    background-color: var(--bg-home-p2p-header-color);
     padding: 15px;
 }
 
 main .aside__main .aside__main--header h2{
     font-size: 15px;
-    color: #150068;
-    background: #D3CDDD;
+    color:var(--bg-home-p2p-bg-button-text);
+    background: var(--bg-home-p2p-bg-button-header);
     padding: 10px 12px!important;
     border-radius: 30px;
 }
@@ -250,13 +510,14 @@ main .aside__main .aside__main--header .expand{
 
 main .aside__main .aside__main--header .expand a{
     text-decoration: none;
-    color: #150068;
+    color: var(--text-primary-link);
 }
 
 main .aside__main .nav{
     position: relative;
     padding: 0.5em 1em!important;
     font-size: 14px;
+    border-bottom: none;
     width: 60%;
 }
 
@@ -307,7 +568,7 @@ main .aside__main .aside__main--list .filter select{
 
 main .aside__main .aside__main--list .list__trade{
     padding: 0.5em 1em;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid var(--bg-border-color-secondary);
 }
 
 main .aside__main .aside__main--list .list__trade:hover{
@@ -318,15 +579,13 @@ main .aside__main .aside__main--list .list__trade{
     margin: 0 0 1em 0;
 }
 
-main .aside__main .aside__main--list .list__trade .list__trade--left
-.name{
-    color: #630295;
+main .aside__main .aside__main--list .list__trade .list__trade--left .name{
+    color: var(--bg--home-p2p-link-username);
 }
 
-main .aside__main .aside__main--list .list__trade .list__trade--left
-.price{
+main .aside__main .aside__main--list .list__trade .list__trade--left .price{
     font-weight: 700;
-    color: #4E4E4E;
+    color: var(--bg--home-p2p-link-currency);
 }
 
 main .aside__main .aside__main--list .list__trade .list__trade--right a{
@@ -343,12 +602,12 @@ main .aside__main .aside__main--list .list__trade .list__trade--right a{
 
 main .main__feed{
     width: 70%;
-    background-color: #210858;
+    background-color: var(--bg-home-feed-base);
     border-radius: 15px;
 }
 
 main .main__feed .nav-link.active{
-    background: #210858!important;
+    background: var(--bg-home-feed-base)!important;
     color: white!important;
     border: none!important;
     border-top-left-radius: 15px;
@@ -373,22 +632,24 @@ main .feed__dashboard{
 }
 
 main .feed__dashboard .feed__dashboard--trending{
-    background: #D3CDDD;
+    background: var(--bg--home-trending-feed);
     width: 150px;
     padding: 10px;
     border-radius: 12px;
 }
 
 main .feed__dashboard .feed__dashboard--timeline{
-    background: #fff;
+    background: var(--bg-home-dashboard-timeline);
     width: 80%;
     border-radius: 10px 0px 10px 10px;
 }
 
 main .feed__dashboard .feed__dashboard--trending h3{
     font-size: 20px;
-    color: #630295;
+    color: var(--color--text--header--clasic);
 }
+
+
 
 main .feed__dashboard .feed__dashboard--trending  .trending__header{
     padding: 0 0 0.5em 0;
@@ -399,8 +660,8 @@ main .feed__dashboard .feed__dashboard--trending .menu__List{
 }
 
 main .feed__dashboard .feed__dashboard--trending .menu__List a{
-    color: #1B0055;
-    background: rgba(21, 0, 104, 0.14);
+    color: var(--bg-button-classic-text);
+    background: var(--bg-button-classic);
     border-radius: 10px;
     padding: 5px 10px;
     text-decoration: none;
@@ -409,7 +670,7 @@ main .feed__dashboard .feed__dashboard--trending .menu__List a{
 }
 
 .main .feed__dashboard .feed__dashboard--timeline .timeline__post{
-    border-bottom: 1px solid rgba(33, 8, 88, 0.4);
+    border-bottom: 1px solid var(--timeline--user--border-bottom);
     padding-bottom: 0.85em;
     margin-bottom: 1em;
 }
@@ -419,7 +680,7 @@ main .feed__dashboard .feed__dashboard--trending .menu__List a{
 }
 
 .main .feed__dashboard .feed__dashboard--timeline .timeline__header h3{
-    color: black;
+    color: var(--timeline--user--header);
     font-size:22px;
 }
 
@@ -440,7 +701,7 @@ main .feed__dashboard .feed__dashboard--trending .menu__List a{
 }
 
 .main .feed__dashboard .feed__dashboard--timeline .timeline__post .timeline__post--user .user__name a{
-    color: #630295;
+    color: var(--timeline--user--name);
     text-decoration: none;
 }
 
@@ -453,13 +714,13 @@ main .feed__dashboard .feed__dashboard--trending .menu__List a{
 }
 
 .main .feed__dashboard .feed__dashboard--timeline .timeline__post .timeline__post--details p{
-    color: #444444;
+    color: var(--timeline--user--description);
     font-size: 14px;
 }
 
 .main .feed__dashboard .feed__dashboard--timeline .timeline__post .timeline__post--details p a{
     color: black;
-    background-color: rgba(21, 0, 104, 0.14);
+    background-color: var(--timeline--user--hash);
     text-decoration: none;
     padding: 4px 8px;
     border-radius: 10px;
@@ -478,7 +739,7 @@ main .feed__dashboard .feed__dashboard--trending .menu__List a{
 }
 
 .main .feed__dashboard .feed__dashboard--timeline .timeline__pub .time__pub--form input[type='submit']{
-    background: #630295;
+    background: var(--bg-button-base);
     border-radius: 20px;
     color: white;
     border: none;
@@ -487,7 +748,7 @@ main .feed__dashboard .feed__dashboard--trending .menu__List a{
 
 
 .main .feed__dashboard .feed__dashboard--timeline .timeline__pub .time__pub--expand{
-    background-color: #210858;
+    background-color: var(--bg-home-expand-button);
     width: 20%;
 }
 
@@ -641,8 +902,127 @@ main .feed__dashboard .feed__dashboard--trending .menu__List a{
     margin: 0 0.25em 0 0;
 }
 
+.page__news {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.page__news .page__news--menu{
+    background: #1B0252;
+    width: 5%;
+    border-radius: 20px;
+    border: 5px solid #630295;
+    height: 450px;
+    padding: 0.75em;
+    position: relative;
+}
+
+.page__news  .page__news--top{
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    width: 25%;
+}
+
+.page__news  .page__news--top .news__top--header {
+    margin: 0 0 1em 0;
+}
+
+.page__news  .page__news--top h2{
+    font-size: 1.25em;
+    text-align: center;
+   
+}
+
+.page__news  .page__news--top{
+    text-align: center;
+}
+
+.page__news  .page__news--top .is__news{
+    margin: 0 0 1em 0;
+}
+
+.page__news  .page__news--top h3{
+    font-size: 0.85em;
+    padding: 0.3em 0!important;
+}
+
+.page__news  .page__news--top figure img{
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+
+.page__news .page__news--menu .menu__Items--x{
+    position: absolute;
+    top: 1em;
+}
+
+.page__news .page__news--menu .menu__Items--xx{
+    position: absolute;
+    bottom:1em;
+}
+
+.page__news .page__news--menu svg{
+    color: white;
+    font-size: 2em;
+}
+
+.page__news .board.page__news--list{
+    background: white;
+    width: 60%;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.page__news .board.page__news--list .title-view-news{
+    margin: 1em 0;
+}
+
+.page__news .board.page__news--list .title-view-news h2{
+    font-size: 1.5em;
+}
+
+.page__news .board.page__news--list .description-view-news {
+    margin: 0 0 1em 0;
+}
+
+.page__news .board.page__news--list .description-view-news a{
+    text-decoration: none;
+}
+
+.page__news .board.page__news--list .description-view-news img{
+    width: 100%;
+    height: auto;
+}
+
+.page__news__lists  .line-list-news{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page__news__lists .item-news{
+    display: block;
+    background: white;
+    width: 15%;
+    margin: 0.5em;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.page__news .line-list-news {
+    margin: 1em 0;
+}
+
+.page__news .line-list-news .item-news{
+    display: block;
+    text-decoration: none;
+    color: #2196F3;
+}
+
 .footer{
-    background-color: #1B0252;
+    background-color: var(--bg-footer-color);
     font-size: 0.9rem;
 }
 
